@@ -6,10 +6,13 @@ public class Booking implements Identifiable {
     private String id;
     private Guest guest;
     private Room room;
+    private Status status;
     public Booking(String id, Guest guest, Room room) {
         this.id = id;
         this.guest = guest;
         this.room = room;
+        this.status = Status.CREATED;
+
     }
     public String getId() {
         return id;
@@ -19,6 +22,12 @@ public class Booking implements Identifiable {
     }
     public Room getRoom() {
         return room;
+    }
+    public Status getStatus() {
+        return status;
+    }
+    public void setStatus(Status status) {
+        this.status = status;
     }
     @Override
     public boolean equals(Object o) {

@@ -7,6 +7,7 @@ public class Room implements Identifiable {
     private String id;
     private int number;
     boolean avaiable;
+
     public Room(String id, int number, boolean avaiable) {
         this.id = id;
         this.number = number;
@@ -21,6 +22,7 @@ public class Room implements Identifiable {
     public boolean isAvaiable() {
         return avaiable;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
