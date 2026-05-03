@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Objects;
 
-public class Booking implements Identifiable {t
+public class Booking implements Identifiable {
     private String id;
     private Guest guest;
     private Room room;
