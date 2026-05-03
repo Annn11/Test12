@@ -1,8 +1,9 @@
 package org.example;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Room {
+public class Room implements Identifiable {
     private String id;
     private int number;
     boolean avaiable;

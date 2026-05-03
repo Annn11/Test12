@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Objects;
 
-public class Guest {
+public class Guest implements Identifiable {
     private String id;
     private String Name;
     private String phoneNumber;
